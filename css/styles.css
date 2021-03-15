@@ -1,0 +1,321 @@
+:root {
+	--main-color: #3a446b;
+	--secondary-color: #aaccff;
+	--box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+	--box-shadow2: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+	--box-shadow3: 0 8px 6px -6px black;
+	--bg-color: #eeeeee;
+}
+
+body {
+	font-family: 'Courier', 'Josefin Sans', sans-serif;
+	color: var(--main-color);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.hr {
+	margin: 1.5rem auto;
+}
+
+.brand {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'Nunito', sans-serif;
+	color: var(--main-color);
+}
+
+.brand:hover {
+	color: var(--secondary-color);
+}
+
+.media {
+    margin-top: 3rem;
+}
+
+.list {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1.5rem;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.list2 {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.link {
+	text-align: center;
+}
+
+.link a {
+	text-decoration: none;
+	font-size: 19px;
+	color: var(--main-color);
+	height: 100%;
+	width: 100%;
+}
+
+.link a:hover {
+	color: var(--secondary-color);
+	text-decoration: underline;
+}
+
+.media-link {
+	font-size: 30px;
+}
+
+.title {
+	margin: 3rem 0 1.5rem 0;
+	text-align: center;
+}
+
+.desc {
+	text-align: center;
+	margin-top: 3.5rem;
+	padding: 1.5rem 0;
+	background-color: var(--bg-color);
+	color: var(--main-color);
+	border-radius: 5px;
+	box-shadow: var(--box-shadow);
+}
+
+.projects {
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(2, minmax(240px, 1fr));
+	grid-auto-rows: 1fr;
+	gap: 1.5rem;
+	padding: 5rem;
+}
+
+/* Tooltip container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.content {
+	padding: 1.5rem 0;
+	background-color: var(--bg-color);
+	color: var(--main-color);
+	border-radius: 5px;
+	box-shadow: var(--box-shadow);
+}
+
+.content--divider {
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-column-gap: 1.5rem;
+	align-items: center;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.content--divider::before, .content--divider::after {
+	content: "";
+    height: 1px;
+    display: block;
+    background-color: var(--main-color);
+}
+
+.content--divider-text {
+    color: var(--main-color);
+    font-size: 0.85rem;
+}
+
+.projects-btns {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1.5rem;
+	list-style-type: none;
+	padding-left: 0;
+	transition : all 0.4s linear;
+}
+
+.projects-btn {
+	position: relative;
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-weight: 600;
+	background-color: var(--main-color);
+	padding: 0.5rem 1rem;
+	width: 100%;
+	text-align: center;
+	border: 0;
+	border-radius: 3px;
+}
+
+.projects-btn:hover {
+	color: var(--main-color);
+	background-color: var(--secondary-color);
+	transform: translateY(3px);
+	box-shadow: var(--box-shadow);
+}
+
+.project-card {
+	border: 1px solid var(--main-color);
+	border-radius: 3px;
+	box-shadow: var(--box-shadow);
+}
+
+.project-card:hover {
+	box-shadow: var(--box-shadow2);
+}
+
+.project-image {
+	/* border-radius: 8px; */
+	max-width: 100%;
+  	height: auto;
+}
+
+.project-title {
+	text-align: center;
+}
+
+.project-desc {
+	padding: 0 0.5rem;
+	text-indent: 30px;
+	text-align: center;
+}
+
+.project-btns {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0.5rem 0;
+	padding-left: 0;
+	font-size: 14px;
+}
+
+.github-btn, .youtube-btn {
+	position: relative;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	/* width: 156px; */
+	text-align: center;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 3px;
+}
+
+.github-btn {
+	color: #fafbfc;
+	background-color: #24292e;
+}
+
+.youtube-btn {
+	color: #fafbfc;
+	background-color: #282828;
+}
+
+.ytb {
+	color: #FF0000;
+}
+
+.github-btn:hover, .youtube-btn:hover {
+	color: var(--main-color);
+	background-color: var(--secondary-color);
+	transform: translateY(3px);
+	box-shadow: var(--box-shadow3);
+}
+
+@media only screen and (max-width: 810px) {
+	.projects {
+		grid-template-columns: repeat(1, minmax(240px, 1fr));
+	}
+
+	.project-btns {
+		gap: 10px;
+		width: 50%;
+		margin: 0.5rem auto;
+		font-size: 13px;
+	}
+
+	.projects-btns {
+		width: 80%;
+		margin: 0.5rem auto;
+	}
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: var(--bg-color);
+	padding: 1.5rem 0;
+    color: var(--main-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+	font-weight: 600;
+}
+
+.footer-link {
+	text-decoration: none;
+	font-size: 18px;
+	color: #e67e22;
+	transition : all 0.1s linear;
+	display: inline-block;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+	transform: translateY(-3px);
+}
+
+.hint {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.game-projs {
+	display: none;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
