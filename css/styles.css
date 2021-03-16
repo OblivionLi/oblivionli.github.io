@@ -7,6 +7,10 @@
 	--bg-color: #eeeeee;
 }
 
+html, body {
+	min-height: 100%;
+}
+
 body {
 	font-family: 'Courier', 'Josefin Sans', sans-serif;
 	color: var(--main-color);
@@ -269,19 +273,6 @@ header {
 	box-shadow: var(--box-shadow3);
 }
 
-/* @media only screen and (max-width: 810px) {
-	.project-btns {
-		flex-direction: column;
-		gap: 1rem;
-		align-items: center;
-	}
-
-	.github-btn, .youtube-btn {
-		width: 70%;
-		margin: 0 auto;
-	}
-} */
-
 footer {
 	display: flex;
 	flex-direction: column;
@@ -323,4 +314,49 @@ footer {
 
 .show {
 	display: block;
+}
+
+.breadcrumbs {
+	margin-top: 3.5rem;
+	padding: 1.5rem 5rem;
+	background-color: var(--bg-color);
+	color: var(--main-color);
+	border-radius: 5px;
+	box-shadow: var(--box-shadow);
+}
+
+.breadcrumb {
+	text-decoration: none;
+	font-size: 19px;
+	color: var(--main-color);
+	height: 100%;
+	width: 100%;
+}
+
+.breadcrumb:hover {
+	color: var(--secondary-color);
+	text-decoration: underline;
+}
+
+.aboutMe {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.content-aboutMe {
+	text-indent: 35px;
+}
+
+.about {
+	padding: 0 8rem;
+}
+
+.about p {
+	line-height: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+	.about {
+		padding: 0 1rem;
+	}
 }
