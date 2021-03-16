@@ -214,14 +214,22 @@ header {
 	padding: 0 0.5rem;
 	text-indent: 30px;
 	text-align: center;
+	height: 11rem;
+	display: flex;
+	align-items: center;
+}
+
+.project-btns {
+	height: 8rem;
 }
 
 .project-btns {
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
 	margin: 0.5rem 0;
-	padding-left: 0;
+	padding: 0 0.5rem;
 	/* font-size: 14px; */
 }
 
@@ -261,7 +269,7 @@ header {
 	box-shadow: var(--box-shadow3);
 }
 
-@media only screen and (max-width: 810px) {
+/* @media only screen and (max-width: 810px) {
 	.project-btns {
 		flex-direction: column;
 		gap: 1rem;
@@ -272,7 +280,7 @@ header {
 		width: 70%;
 		margin: 0 auto;
 	}
-}
+} */
 
 footer {
 	display: flex;
