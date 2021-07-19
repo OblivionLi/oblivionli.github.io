@@ -14,6 +14,7 @@ html, body {
 body {
 	font-family: 'Courier', 'Josefin Sans', sans-serif;
 	color: var(--main-color);
+	background-image: linear-gradient(to top, #3a446b, #40476f, #454a74, #4b4d78, #51507c, #5e5685, #6c5d8d, #7a6395, #946ea3, #af7aaf, #ca86ba, #e592c3);
 }
 
 header {
@@ -21,15 +22,22 @@ header {
 	flex-direction: column;
 }
 
+.container {
+	width: 80%;
+	margin: 0 auto;
+	opacity: 0.8;
+}
+
+.hr-container {
+	width: 60%;
+	margin: 1.5rem auto;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 1.5rem;
-}
-
-.hr {
-	margin: 1.5rem auto;
 }
 
 .brand {
@@ -318,11 +326,14 @@ footer {
 
 .breadcrumbs {
 	margin-top: 3.5rem;
+	margin-left: 188.703px;
 	padding: 1.5rem 5rem;
 	background-color: var(--bg-color);
 	color: var(--main-color);
 	border-radius: 5px;
 	box-shadow: var(--box-shadow);
+	width: 10%;
+	opacity: 0.8;
 }
 
 .breadcrumb {
