@@ -189,7 +189,7 @@ body {
     margin-bottom: 20px;
 }
 
-.portfolio-showcase-right-title-left>a {
+.portfolio-showcase-right-title-left>a, .hidden-title {
     color: var(--tomato);
     font-weight: 600;
     font-size: 40px;
@@ -198,7 +198,7 @@ body {
     opacity: .8;
 }
 
-.portfolio-showcase-right-title-left>a:hover {
+.portfolio-showcase-right-title-left>a:hover, .hidden-title {
     opacity: 1;
     text-decoration: underline;
 }
@@ -346,4 +346,8 @@ body {
 .footer-list>li>a:hover {
     padding-bottom: 5px;
     border-bottom: 3px solid var(--tomato);
+}
+
+.hidden-title {
+    display: none;
 }
