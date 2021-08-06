@@ -139,6 +139,20 @@ body {
 /* showcase */
 
 .portfolio-showcase {
+    padding-bottom: 150px;
+    border-bottom: 3px solid var(--tomato);
+}
+
+.portfolio-showcase-left {
+    padding-bottom: 150px;
+    border-bottom: 3px solid var(--tomato);
+}
+
+.portfolio-showcase:last-of-type {
+    border: 0;
+}
+
+.portfolio-showcase {
     width: 70%;
     margin: 10rem auto;
     display: flex;
@@ -182,6 +196,10 @@ body {
     margin-left: 10px;
 }
 
+.portfolio-showcase-right-title > h1 {
+    margin-left: auto;
+}
+
 .portfolio-showcase-right-title-left {
     display: flex;
     flex-direction: column;
@@ -223,6 +241,11 @@ body {
     left: 0;
     width: 350px;
     letter-spacing: 2px;
+    box-shadow: var(--shadow-box);
+    padding: 20px;
+    background-color: var(--less-dark);
+    border-radius: 5px;
+    border: .5px solid var(--tomato);
 }
 
 /* portfolio showcase right side */
@@ -276,6 +299,11 @@ body {
     right: 0;
     width: 350px;
     letter-spacing: 2px;
+    box-shadow: var(--shadow-box);
+    padding: 20px;
+    background-color: var(--less-dark);
+    border-radius: 5px;
+    border: .5px solid var(--tomato);
 }
 
 .slash {
@@ -291,6 +319,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .portfolio-showcase-media-a {

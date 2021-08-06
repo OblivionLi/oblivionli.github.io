@@ -1,3 +1,15 @@
+@media only screen and (min-width: 768px) {
+    .portfolio-showcase-right-title > a {
+        text-align: end;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .portfolio-showcase-right-title > h1, .portfolio-showcase-right-title-left > h1 {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .navigation {
         flex-direction: column;
@@ -8,7 +20,7 @@
         margin: 0 auto;
     }
 
-    .portfolio-showcase {
+    .portfolio-showcase, .portfolio-showcase-left {
         flex-direction: column;
         margin-top: 100px;
         margin-bottom: 100px;
@@ -19,41 +31,45 @@
         height: 100%;
     }
     
-    .portfolio-showcase-right {
+    .portfolio-showcase-right, .portfolio-showcase-right-left {
         margin-left: 0;
     }
 
-    .portfolio-showcase-right-title {
+    .portfolio-showcase-right-title, .portfolio-showcase-right-title-left {
         flex-direction: row;
         width: 100%;
 
         position: relative;
     }
 
-    .portfolio-showcase-right-title > h1 {
+    .portfolio-showcase-right-title > h1, .portfolio-showcase-right-title-left > h1 {
         display: none;
     }
 
-    .portfolio-showcase-right-title > a {
+    .portfolio-showcase-right-title > a, .portfolio-showcase-right-title-left > a {
         display: none;
     }
 
-    .portfolio-showcase-desc {
+    .portfolio-showcase-desc, .portfolio-showcase-desc-left {
         position: relative;
         height: 100%;
         width: 60%;
         margin: 0 auto;;
     }
 
-    .portfolio-showcase-languages {
+    .portfolio-showcase-languages, .portfolio-showcase-languages-left {
         position: relative;
-        width: 100%;
+        width: 60%;
         text-align: center;
-        margin: 15px 0;
+        margin: 15px auto;
     }
 
     .portfolio-showcase-media {
         margin-top: 50px;
+    }
+
+    .portfolio-showcase-media > li {
+        margin-bottom: 20px;
     }
 
     .footer-list>li>a>i {
@@ -67,6 +83,7 @@
     .hidden-title {
         display: block;
         margin: 10px auto;
+        font-size: 25px;
     }
 }
 
