@@ -2,6 +2,10 @@
     .portfolio-showcase-right-title > a {
         text-align: end;
     }
+
+    .scrollToTopBtn {
+        right: 35px;
+    }
 }
 
 @media only screen and (max-width: 1700px) {
