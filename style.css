@@ -396,8 +396,13 @@ body {
     cursor: pointer;
     border-radius: 50%;
     border: 3px solid var(--tomato);
-    background-color: var(--less-dark);
+    background-color: var(--dark);
     color: var(--tomato);
+}
+
+.scrollToTopBtn:hover {
+    background-color: var(--primary-text);
+    color: var(--dark)
 }
 
 .scrollToTopBtn:focus {
